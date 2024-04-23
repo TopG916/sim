@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Classroom</title>
+    <style>
+      body {
+        text-align: left;
+      }
+      div {
+        
+      }
+      #textbox {
+        font-size: 10px;
+        text-align: center;
+        padding: 2px;
+      }
+      #send {
+        font-size: 10px;
+        padding: 2px;
+      }
+      #clr {
+        font-size: 10px;
+        padding: 2px;
+      }
+    </style>
+    <link href="/sim/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <input type="text" id="textbox" placeholder="send">
+    <button id="send" onclick="sendText('You', document.getElementById('textbox').value)">Send</button>
+    <button id="clr" onclick="clear();">Clear</button>
+    <script src="/sim/js/sim.js"></script>
+  </body>
+</html>
